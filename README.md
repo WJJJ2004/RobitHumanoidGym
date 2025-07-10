@@ -10,13 +10,13 @@ Isaac Lab 기반의 **Robit 휴머노이드 강화학습 프로젝트**입니다
 - **Isaac Lab 설치 위치**: Conda 가상환경 (python 3.10)
 - **로봇 모델 경로**: `/usd_ws/robit/robit_humanoid`
 - **학습 프레임워크**: [Isaac Lab](https://github.com/NVIDIA-Omniverse/IsaacLab) (BSD-3-Clause)
-- **강화학습 알고리즘**: PPO (RSL-RL 및 SKRL 설정 제공)
+- **강화학습 알고리즘**: PPO (RSL-RL 설정 제공)
 
 ##  주요 기능
 
 - Robit 휴머노이드 모델에 맞춘 **평지 / 복합지형 환경** 제공
 - **Feet contact / slide / air time** 기반 보상 함수 설계
-- **RSL-RL 및 SKRL 기반 PPO 설정** 샘플 포함
+- **RSL-RL 기반 PPO 설정** 샘플 포함
 - Sim-to-Real 고려한 센서 기반 관측 및 보상 설계 구조
 
 ---
