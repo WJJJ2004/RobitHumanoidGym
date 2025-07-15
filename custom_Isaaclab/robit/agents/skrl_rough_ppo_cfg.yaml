@@ -63,7 +63,7 @@ agent:
   time_limit_bootstrap: False
   # logging and checkpoint
   experiment:
-    directory: "robit_rough"  # 기존 h1_rough에서 변경
+    directory: "robit_rough" 
     experiment_name: "robit_training"  # 실험 이름 지정
     write_interval: auto
     checkpoint_interval: auto
