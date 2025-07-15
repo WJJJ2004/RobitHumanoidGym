@@ -1,0 +1,383 @@
+<?xml version="1.0" ?>
+<robot name="masterHumanoid2025">
+<!-- 색칠 태그 -->
+  <material name="silver">
+    <color rgba="0.700 0.700 0.700 1.000"/>
+  </material>
+  <material name="light_gray">
+    <color rgba="0.85 0.85 0.85 1.0"/>
+  </material>
+  <material name="sky_blue">
+    <color rgba="0.678 0.847 0.902 1.0"/>
+  </material>
+  <material name="mint_green">
+    <color rgba="0.749 1.000 0.847 1.0"/>
+  </material>
+  <material name="peach">
+    <color rgba="1.000 0.855 0.725 1.0"/>
+  </material>
+  <material name="lavender">
+    <color rgba="0.902 0.902 0.980 1.0"/>
+  </material>
+  <material name="salmon">
+    <color rgba="1.000 0.627 0.478 1.0"/>
+  </material>
+  <link name="base_link">
+    <!-- mesh linking / mass value 수정 필요 -->
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0019277625580420743 -0.0002828648876733997 0.690502612360238"/>
+      <mass value="5.614608211157563"/>
+      <inertia ixx="0.296093" ixy="0.000112" ixz="0.001772" iyy="0.167039" iyz="-0.000108" izz="0.152631"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_upper_frame_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.005046700831779199 1.0557817920323065e-05 -0.02143088061471432"/>
+      <mass value="0.1555228615666778"/>
+      <inertia ixx="0.000129" ixy="0.0" ixz="-3e-05" iyy="0.000495" iyz="0.0" izz="0.000449"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.009035 -0.07965 -0.648137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_upper_frame_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="light_gray"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.009035 -0.07965 -0.648137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_upper_frame_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_upper_frame_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0050467103826035645 3.918892784643413e-06 -0.021430880698611654"/>
+      <mass value="0.1555228610526311"/>
+      <inertia ixx="0.000129" ixy="1e-06" ixz="-3e-05" iyy="0.000495" iyz="0.0" izz="0.000449"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.009035 0.08035 -0.648137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_upper_frame_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="light_gray"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.009035 0.08035 -0.648137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_upper_frame_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_upper_gearbox_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.05679763300573742 0.0010494997385310512 -0.02259314565567294"/>
+      <mass value="0.7539590478154932"/>
+      <inertia ixx="0.000908" ixy="3.5e-05" ixz="-6.9e-05" iyy="0.00133" iyz="2.1e-05" izz="0.001405"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.070085 -0.079715 -0.583137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_upper_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="sky_blue"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.070085 -0.079715 -0.583137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_upper_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_upper_gearbox_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.057294496913915735 -0.0012029091034558848 -0.022593661068604054"/>
+      <mass value="0.7539598848625294"/>
+      <inertia ixx="0.000908" ixy="-3.3e-05" ixz="-6.9e-05" iyy="0.00133" iyz="-2.1e-05" izz="0.001405"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.070085 0.080239 -0.583137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_upper_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="sky_blue"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.070085 0.080239 -0.583137"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_upper_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_middle_leg_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0129261417013413 0.0503956601070247 -0.17114233911271742"/>
+      <mass value="1.077312188551498"/>
+      <inertia ixx="0.005505" ixy="-2e-06" ixz="0.000186" iyy="0.004327" iyz="-2e-06" izz="0.001628"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.02074 0.130854 -0.582791"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_middle_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="mint_green"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.02074 0.130854 -0.582791"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_middle_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_middle_leg_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.013291361449427885 -0.05034809076935265 -0.17112828814454834"/>
+      <mass value="1.077312207009041"/>
+      <inertia ixx="0.005504" ixy="-1e-06" ixz="0.000197" iyy="0.004327" iyz="2e-06" izz="0.00163"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.020385 -0.130069 -0.582816"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_middle_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="mint_green"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.020385 -0.130069 -0.582816"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_middle_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_lower_leg_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.005976086031339919 -0.050405366889918674 -0.08985471728805111"/>
+      <mass value="0.5227872807967037"/>
+      <inertia ixx="0.001799" ixy="-1e-06" ixz="4.2e-05" iyy="0.001164" iyz="0.0" izz="0.000784"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.020101 -0.130312 -0.332816"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_lower_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="peach"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.020101 -0.130312 -0.332816"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_lower_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_lower_leg_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.005830783148732369 0.050467821012633265 -0.08982985681998587"/>
+      <mass value="0.5227872807963939"/>
+      <inertia ixx="0.001799" ixy="-1e-06" ixz="4.2e-05" iyy="0.001164" iyz="-0.0" izz="0.000784"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.01971 0.130971 -0.332793"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_lower_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="peach"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.01971 0.130971 -0.332793"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_lower_leg_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_lower_gearbox_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.033526419385759954 0.05170958281515828 0.022199596774821334"/>
+      <mass value="0.753959453663333"/>
+      <inertia ixx="0.000908" ixy="3.5e-05" ixz="6.9e-05" iyy="0.00133" iyz="-2.1e-05" izz="0.001405"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.01971 0.131089 -0.082869"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_lower_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="lavender"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.01971 0.131089 -0.082869"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_lower_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_lower_gearbox_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.03367477408867826 -0.05162366209160814 0.022174216478641956"/>
+      <mass value="0.7539594232725966"/>
+      <inertia ixx="0.000908" ixy="-3.4e-05" ixz="6.9e-05" iyy="0.00133" iyz="2.1e-05" izz="0.001405"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.020101 -0.130555 -0.082892"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_lower_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="lavender"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.020101 -0.130555 -0.082892"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_lower_gearbox_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_foot_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.06872157934204118 -0.009486571049873826 -0.06011727006259174"/>
+      <mass value="1.3311575432838623"/>
+      <inertia ixx="0.002203" ixy="5.9e-05" ixz="0.000219" iyy="0.007731" iyz="-8.8e-05" izz="0.009008"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.071615 0.080373 -0.082475"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_foot_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="salmon"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.071615 0.080373 -0.082475"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/left_foot_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_foot_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.06874834301237638 0.009252948203182856 -0.060122597886593396"/>
+      <mass value="1.331157749098713"/>
+      <inertia ixx="0.002203" ixy="-4.3e-05" ixz="0.000219" iyy="0.007732" iyz="8.8e-05" izz="0.009008"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0.071369 -0.080103 -0.082473"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_foot_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="salmon"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.071369 -0.080103 -0.082473"/>
+      <geometry>
+        <mesh filename="file:///home/lwj/colcon_ws/install/masterHumanoid2025_description/share/masterHumanoid2025_description/meshes/right_foot_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- joint 정의부 / 댐핑 계수 마찰 계수 지정 필요 -->
+  <joint name="rotate_12" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.009035 0.07965 0.648137"/>
+    <parent link="base_link"/>
+    <child link="left_upper_frame_1"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_13" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.009035 -0.08035 0.648137"/>
+    <parent link="base_link"/>
+    <child link="right_upper_frame_1"/>
+    <axis xyz="0.0 0.0 -1.0"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_10" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.06105 6.5e-05 -0.065"/>
+    <parent link="left_upper_frame_1"/>
+    <child link="left_upper_gearbox_1"/>
+    <axis xyz="-0.999999 0.001062 -0.0"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_11" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.06105 0.000111 -0.065"/>
+    <parent link="right_upper_frame_1"/>
+    <child link="right_upper_gearbox_1"/>
+    <axis xyz="-0.999998 0.001816 -0.0"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_15" type="revolute">
+    <origin rpy="0 0 0" xyz="0.090825 -0.050615 -0.000346"/>
+    <parent link="right_upper_gearbox_1"/>
+    <child link="right_middle_leg_1"/>
+    <axis xyz="-0.001816 -0.999998 0.000473"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_14" type="revolute">
+    <origin rpy="0 0 0" xyz="0.09047 0.050354 -0.000321"/>
+    <parent link="left_upper_gearbox_1"/>
+    <child link="left_middle_leg_1"/>
+    <axis xyz="0.001062 0.999999 0.000972"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_16" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.000284 0.000243 -0.25"/>
+    <parent link="left_middle_leg_1"/>
+    <child link="left_lower_leg_1"/>
+    <axis xyz="0.001062 0.999999 0.000972"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_17" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.00103 -0.000117 -0.249998"/>
+    <parent link="right_middle_leg_1"/>
+    <child link="right_lower_leg_1"/>
+    <axis xyz="-0.001816 -0.999998 0.000473"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_19" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 -0.000118 -0.249924"/>
+    <parent link="right_lower_leg_1"/>
+    <child link="left_lower_gearbox_1"/>
+    <axis xyz="-0.001816 -0.999998 0.000473"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_18" type="revolute">
+    <origin rpy="0 0 0" xyz="0.0 0.000243 -0.249924"/>
+    <parent link="left_lower_leg_1"/>
+    <child link="right_lower_gearbox_1"/>
+    <axis xyz="0.001062 0.999999 0.000972"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_21" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.091325 0.050716 -0.000394"/>
+    <parent link="left_lower_gearbox_1"/>
+    <child link="left_foot_1"/>
+    <axis xyz="-0.999998 0.001816 -0.0"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+  <joint name="rotate_20" type="revolute">
+    <origin rpy="0 0 0" xyz="-0.09147 -0.050452 -0.000419"/>
+    <parent link="right_lower_gearbox_1"/>
+    <child link="right_foot_1"/>
+    <axis xyz="-0.999999 0.001062 0.0"/>
+    <limit lower="-0.05" upper="0.05" effort="6.0" velocity="6.6"/>
+    <dynamics damping="0.1" friction="0.01"/>
+  </joint>
+</robot>
